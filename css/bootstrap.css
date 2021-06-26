@@ -7080,7 +7080,7 @@ textarea.form-control-lg {
 }
 
 .border-bottom {
-    border-bottom: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid white !important;
 }
 
 .border-bottom-0 {
@@ -8017,7 +8017,7 @@ textarea.form-control-lg {
 }
 
 .bg-body {
-    background-color: #fff !important;
+    background-color: #faece6 !important;
 }
 
 .bg-white {
