@@ -6,11 +6,13 @@ import {HomeComponent} from "./components/home/home.component";
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    data: {title: 'Home'}
   },
   {
     path: 'over-ons',
-    component: AboutComponent
+    component: AboutComponent,
+    data: {title: 'Over Ons'}
   },
   {
     path: '',
