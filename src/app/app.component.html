@@ -1,4 +1,4 @@
 <app-navbar></app-navbar>
-<div class="container">
-  <router-outlet></router-outlet>
+<div class="router-wrapper" [@scaleDownFromBottom]="getState(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
 </div>

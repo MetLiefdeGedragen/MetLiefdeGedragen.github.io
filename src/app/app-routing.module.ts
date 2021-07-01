@@ -7,12 +7,12 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    data: {title: 'Home'}
+    data: {title: 'Home', state: 'home'}
   },
   {
     path: 'over-ons',
     component: AboutComponent,
-    data: {title: 'Over Ons'}
+    data: {title: 'Over Ons', state: 'over-ons'}
   },
   {
     path: '',

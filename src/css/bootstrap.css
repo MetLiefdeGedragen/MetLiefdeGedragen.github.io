@@ -8020,6 +8020,7 @@ textarea.form-control-lg {
 
 .bg-body {
   background-color: #faece6 !important;
+  overflow-x: hidden;
 }
 
 .bg-white {
