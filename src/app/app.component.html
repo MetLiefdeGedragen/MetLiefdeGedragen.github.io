@@ -1,4 +1,4 @@
 <app-navbar></app-navbar>
-<div class="router-wrapper" [@scaleDownFromBottom]="getState(outlet)">
+<main [@fadeAnimation]="getRouterOutletState(outlet)">
   <router-outlet #outlet="outlet"></router-outlet>
-</div>
+</main>

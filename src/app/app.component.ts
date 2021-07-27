@@ -2,14 +2,14 @@ import {Component} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router, RouterOutlet} from "@angular/router";
 import {Title} from "@angular/platform-browser";
 import {filter, map} from "rxjs/operators";
-import {scaleDownFromBottom} from "ngx-router-animations";
-import {transition, trigger, useAnimation} from "@angular/animations";
+import {fadeAnimation} from "./animations";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [trigger('scaleDownFromBottom', [transition('* => *', useAnimation(scaleDownFromBottom))])]
+  animations: [fadeAnimation]
+  // animations: [trigger('scaleDownFromBottom', [transition('* => *', useAnimation(scaleDownFromBottom))])]
 })
 export class AppComponent {
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title) {
@@ -35,7 +35,7 @@ export class AppComponent {
     });
   }
 
-  getState(outlet: RouterOutlet) {
-    return outlet.activatedRouteData.state;
+  public getRouterOutletState(outlet: RouterOutlet) {
+    return outlet.isActivated ? outlet.activatedRoute : '';
   }
 }
