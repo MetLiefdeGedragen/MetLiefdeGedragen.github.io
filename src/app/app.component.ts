@@ -9,7 +9,6 @@ import {fadeAnimation} from "./animations";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [fadeAnimation]
-  // animations: [trigger('scaleDownFromBottom', [transition('* => *', useAnimation(scaleDownFromBottom))])]
 })
 export class AppComponent {
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title) {

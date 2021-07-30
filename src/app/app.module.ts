@@ -7,13 +7,17 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { StudentArticlesOverviewComponent } from './components/student-articles-overview/student-articles-overview.component';
+import { CtgArticleComponent } from './components/_studentArticles/ctg-article/ctg-article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    StudentArticlesOverviewComponent,
+    CtgArticleComponent
   ],
   imports: [
     BrowserModule,
