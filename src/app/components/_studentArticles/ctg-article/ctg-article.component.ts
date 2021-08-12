@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-ctg-article',
-  templateUrl: './ctg-article.component.html',
-  styleUrls: ['./ctg-article.component.css']
+  templateUrl: './ctg-article.component.html'
 })
 export class CtgArticleComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
