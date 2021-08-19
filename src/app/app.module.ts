@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { StudentArticlesOverviewComponent } from './components/student-articles-overview/student-articles-overview.component';
 import { CtgArticleComponent } from './components/_studentArticles/ctg-article/ctg-article.component';
+import { AnesthesieEnAnalgesieArticleComponent } from './components/_studentArticles/anesthesie-en-analgesie-article/anesthesie-en-analgesie-article.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CtgArticleComponent } from './components/_studentArticles/ctg-article/c
     AboutComponent,
     HomeComponent,
     StudentArticlesOverviewComponent,
-    CtgArticleComponent
+    CtgArticleComponent,
+    AnesthesieEnAnalgesieArticleComponent
   ],
   imports: [
     BrowserModule,

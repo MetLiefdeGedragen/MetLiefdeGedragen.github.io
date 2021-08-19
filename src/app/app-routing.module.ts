@@ -4,6 +4,7 @@ import {AboutComponent} from "./components/about/about.component";
 import {HomeComponent} from "./components/home/home.component";
 import {StudentArticlesOverviewComponent} from "./components/student-articles-overview/student-articles-overview.component";
 import {CtgArticleComponent} from "./components/_studentArticles/ctg-article/ctg-article.component";
+import {AnesthesieEnAnalgesieArticleComponent} from "./components/_studentArticles/anesthesie-en-analgesie-article/anesthesie-en-analgesie-article.component";
 
 const routes: Routes = [
   {
@@ -25,6 +26,11 @@ const routes: Routes = [
     path: 'how-to-midwife/ctg',
     component: CtgArticleComponent,
     data: {title: 'CTG', state: 'ctg'},
+  },
+  {
+    path: 'how-to-midwife/anesthesie-en-analgesie',
+    component: AnesthesieEnAnalgesieArticleComponent,
+    data: {title: 'Anesthesie en analgesie', state: 'anesthesie-en-analgesie'},
   },
   {
     path: '',
