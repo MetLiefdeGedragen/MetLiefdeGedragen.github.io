@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StudentArticlesOverviewComponent } from './components/student-articles-overview/student-articles-overview.component';
-import { CtgArticleComponent } from './components/_studentArticles/ctg-article/ctg-article.component';
-import { AnesthesieEnAnalgesieArticleComponent } from './components/_studentArticles/anesthesie-en-analgesie-article/anesthesie-en-analgesie-article.component';
+import { StudentArticlesDetailComponent } from './components/student-articles-detail/student-articles-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,15 +17,15 @@ import { AnesthesieEnAnalgesieArticleComponent } from './components/_studentArti
     AboutComponent,
     HomeComponent,
     StudentArticlesOverviewComponent,
-    CtgArticleComponent,
-    AnesthesieEnAnalgesieArticleComponent
+    StudentArticlesDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
