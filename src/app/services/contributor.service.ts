@@ -10,9 +10,9 @@ export class ContributorService {
       name: 'Lore',
       pictureUrl: '../../assets/fotoLore.jpg',
       description:
-        'Ik ben Lore, masterstudente systeem- en procesinnovatie in de gezondheidszorg. ' +
+        'Ik ben Lore, afgestudeerde master systeem- en procesinnovatie in de gezondheidszorg. ' +
         'Tijdens het schrijven van mijn bachelorproef en mijn stage op het provinciaal secretariaat bij Wit-Gele Kruis kwam ik erachter dat ik geïnteresseerd ben in wetenschappelijk onderzoek. ' +
-        'Daarom vervolg ik mijn opleiding met een masteropleiding.',
+        'Daarom vervolgde ik mijn opleiding met een masteropleiding.',
     },
     {
       name: 'Femke',
